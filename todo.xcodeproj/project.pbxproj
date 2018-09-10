@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		29995BC321308E9B008FE485 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29995BC221308E9B008FE485 /* AppDelegate.swift */; };
 		29995BC521308E9C008FE485 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29995BC421308E9C008FE485 /* ViewController.swift */; };
-		29995BC821308E9C008FE485 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29995BC621308E9C008FE485 /* Main.storyboard */; };
 		29995BCB21308E9C008FE485 /* todo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 29995BC921308E9C008FE485 /* todo.xcdatamodeld */; };
 		29995BCD21308E9C008FE485 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29995BCC21308E9C008FE485 /* Assets.xcassets */; };
-		29995BD021308E9C008FE485 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29995BCE21308E9C008FE485 /* LaunchScreen.storyboard */; };
+		29EAFCE621348D60005FB55D /* Record+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EAFCE421348D60005FB55D /* Record+CoreDataProperties.swift */; };
+		29EAFCE721348D60005FB55D /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EAFCE521348D60005FB55D /* Record.swift */; };
+		29EAFCE921348DB7005FB55D /* CoreDataConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EAFCE821348DB7005FB55D /* CoreDataConnect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		29995BBF21308E9B008FE485 /* todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29995BC221308E9B008FE485 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29995BC421308E9C008FE485 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		29995BC721308E9C008FE485 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		29995BCA21308E9C008FE485 /* todo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = todo.xcdatamodel; sourceTree = "<group>"; };
 		29995BCC21308E9C008FE485 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		29995BCF21308E9C008FE485 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29995BD121308E9D008FE485 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29EAFCE421348D60005FB55D /* Record+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Record+CoreDataProperties.swift"; path = "../ToDo/Record+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		29EAFCE521348D60005FB55D /* Record.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Record.swift; path = ../ToDo/Record.swift; sourceTree = "<group>"; };
+		29EAFCE821348DB7005FB55D /* CoreDataConnect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataConnect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,9 @@
 		29995BB621308E9B008FE485 = {
 			isa = PBXGroup;
 			children = (
+				29EAFCE421348D60005FB55D /* Record+CoreDataProperties.swift */,
+				29EAFCE521348D60005FB55D /* Record.swift */,
+				29EAFCE821348DB7005FB55D /* CoreDataConnect.swift */,
 				29995BC121308E9B008FE485 /* todo */,
 				29995BC021308E9B008FE485 /* Products */,
 			);
@@ -58,9 +63,7 @@
 			children = (
 				29995BC221308E9B008FE485 /* AppDelegate.swift */,
 				29995BC421308E9C008FE485 /* ViewController.swift */,
-				29995BC621308E9C008FE485 /* Main.storyboard */,
 				29995BCC21308E9C008FE485 /* Assets.xcassets */,
-				29995BCE21308E9C008FE485 /* LaunchScreen.storyboard */,
 				29995BD121308E9D008FE485 /* Info.plist */,
 				29995BC921308E9C008FE485 /* todo.xcdatamodeld */,
 			);
@@ -125,9 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29995BD021308E9C008FE485 /* LaunchScreen.storyboard in Resources */,
 				29995BCD21308E9C008FE485 /* Assets.xcassets in Resources */,
-				29995BC821308E9C008FE485 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,32 +139,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29EAFCE621348D60005FB55D /* Record+CoreDataProperties.swift in Sources */,
+				29EAFCE921348DB7005FB55D /* CoreDataConnect.swift in Sources */,
 				29995BC521308E9C008FE485 /* ViewController.swift in Sources */,
+				29EAFCE721348D60005FB55D /* Record.swift in Sources */,
 				29995BC321308E9B008FE485 /* AppDelegate.swift in Sources */,
 				29995BCB21308E9C008FE485 /* todo.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		29995BC621308E9C008FE485 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				29995BC721308E9C008FE485 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		29995BCE21308E9C008FE485 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				29995BCF21308E9C008FE485 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		29995BD221308E9D008FE485 /* Debug */ = {
@@ -253,6 +238,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = todo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shawna.todo;
@@ -264,6 +250,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = todo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shawna.todo;
@@ -290,6 +277,7 @@
 				29995BD621308E9D008FE485 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
